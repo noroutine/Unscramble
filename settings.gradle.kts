@@ -18,16 +18,13 @@
 
 pluginManagement {
     repositories {
-        google()
-        mavenCentral()
-        gradlePluginPortal()
+        maven(url = "https://nexus.nrtn.dev/repository/maven-public")
     }
 }
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
-        google()
-        mavenCentral()
+        maven(url = "https://nexus.nrtn.dev/repository/maven-public")
     }
 }
 rootProject.name = "Unscramble"
